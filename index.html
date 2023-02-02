@@ -524,26 +524,31 @@
                 <div class="recipient-data">
                     <div class="recipient-data-string">
                         <div class="recipient-data-name recipient-data-input-container">
-                            <input type="text" id="name" class="recipient-data-input" placeholder="Укажите имя">
+                            <input type="text" id="name" class="recipient-data-input" placeholder="Укажите имя" onchange="generateInscription('name', 'recipient-inscription-name')">
                             <span class="recipient-data-error" id="recipient-data-name-error">Введите имя</span>
+                            <span class="recipient-data-when-edit-show" id="recipient-inscription-name">Имя</span>
                         </div>
                         <div class="recipient-data-surname recipient-data-input-container">
-                            <input type="text" id="surname" class="recipient-data-input" placeholder="Введите фамилию">
+                            <input type="text" id="surname" class="recipient-data-input" placeholder="Введите фамилию" onchange="generateInscription('surname', 'recipient-inscription-surname')">
                             <span class="recipient-data-error" id="recipient-data-surname-error">Введите фамилию</span>
+                            <span class="recipient-data-when-edit-show" id="recipient-inscription-surname">Фамилия</span>
                         </div>
                     </div>
                     <div class="recipient-data-string">
                         <div class="recipient-data-email recipient-data-input-container">
-                            <input type="text" id="email" class="recipient-data-input" placeholder="Укажите электронную почту" onblur="validateEmail()">
+                            <input type="text" id="email" class="recipient-data-input" placeholder="Укажите электронную почту" onchange="generateInscription('email', 'recipient-inscription-email')" onblur="validateEmail()">
                             <span class="recipient-data-error" id="recipient-data-email-error">Проверьте адрес электронной почты</span>
+                            <span class="recipient-data-when-edit-show" id="recipient-inscription-email">Электронная почта</span>
                         </div>
                         <div class="recipient-data-phone recipient-data-input-container">
-                            <input type="text" id="phone" class="recipient-data-input" placeholder="Укажите номер телефона" onblur="validatePhone()">
+                            <input type="text" id="phone" class="recipient-data-input" placeholder="Укажите номер телефона" onchange="generateInscription('phone', 'recipient-inscription-phone')" onblur="validatePhone()">
                             <span class="recipient-data-error" id="recipient-data-phone-error">Формат: +9 999 999 99 99</span>
+                            <span class="recipient-data-when-edit-show" id="recipient-inscription-phone">Телефон</span>
                         </div>
                         <div class="recipient-data-index recipient-data-input-container">
-                            <input type="text" id="index" class="recipient-data-input" placeholder="Укажите индекс" onblur="validateIndex()">
+                            <input type="text" id="index"  class="recipient-data-input" placeholder="Укажите индекс" onchange="generateInscription('index', 'recipient-inscription-index')" onblur="validateIndex()">
                             <span class="recipient-data-error" id="recipient-data-index-error">Формат: 1234567</span>
+                            <span class="recipient-data-when-edit-show" id="recipient-inscription-index">Индекс</span>
                         </div>
                     </div>
                 </div>

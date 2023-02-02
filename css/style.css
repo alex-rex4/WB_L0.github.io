@@ -1592,11 +1592,34 @@ margin-top: 16px;
     left: 0;
 }
 
+.recipient-data-when-edit-show {
+    display: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9797AF;
+    position: absolute;
+    z-index: 4;
+    top: -16px;
+    left: 0;
+}
+
+.show {
+    display: block;
+
+}
+
 .recipient-data-index {
     width: 33%;
     max-width: 217.33px;
     margin-left: 24px;
 }
+
+.error-input-text {
+    color: #d30000;
+}
+
+
 
 .recipient-data-input {
     font-weight: 400;
@@ -1935,8 +1958,30 @@ margin-top: 16px;
     justify-content: start;
 }
 
+.red {
+    color: #d30000;
+    border: #d30000;
+}
 
 
+
+
+
+.recipient-data-header {
+    display: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9797AF;
+}
+
+.show {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    bottom: 30px;
+    left: 0;
+}
 
 
 
